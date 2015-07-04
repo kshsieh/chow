@@ -12,12 +12,18 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'jquery-rails'
 gem 'turbolinks'
 
+gem 'annotate'
+
 group :production do
   gem 'puma'
 end
 
 group :development do
   gem 'thin'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-bundler'
+  gem 'guard-livereload'
 end
 
 group :development, :test do
