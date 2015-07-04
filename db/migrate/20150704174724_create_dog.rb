@@ -5,5 +5,8 @@ class CreateDog < ActiveRecord::Migration
       t.uuid :uuid
       t.string :image_url
     end
+
+    add_index(:dogs, :name)
+    add_index(:dogs, :uuid, unique: true)
   end
 end

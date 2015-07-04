@@ -22,4 +22,7 @@ ActiveRecord::Schema.define(version: 20150704174724) do
     t.string "image_url"
   end
 
+  add_index "dogs", ["name"], name: "index_dogs_on_name", using: :btree
+  add_index "dogs", ["uuid"], name: "index_dogs_on_uuid", unique: true, using: :btree
+
 end
