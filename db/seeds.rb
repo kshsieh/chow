@@ -16,6 +16,7 @@ profile_image_urls = [
 4.times do |dog|
   Dog.create!(
     name: Faker::Name.name,
+    description: Faker::Lorem.paragraph(2),
     profile_image_url: profile_image_urls[rand(0...4)]   
   )
 end

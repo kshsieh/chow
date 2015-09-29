@@ -8,6 +8,7 @@
 #  profile_image_url :string
 #  created_at        :datetime
 #  updated_at        :datetime
+#  description       :text
 #
 
 require 'rails_helper'
