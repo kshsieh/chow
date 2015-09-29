@@ -3,7 +3,8 @@ class CreateDog < ActiveRecord::Migration
     create_table :dogs do |t|
       t.string :name
       t.uuid :uuid
-      t.string :image_url
+      t.string :profile_image_url
+      t.timestamps
     end
 
     add_index(:dogs, :name)

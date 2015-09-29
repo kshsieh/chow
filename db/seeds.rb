@@ -5,3 +5,17 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+profile_image_urls = [
+  'http://www.animalhavenshelter.org/images/content/pagebuilder/Bruce_Willie.jpg',
+  'http://www.animalhavenshelter.org/images/content/pagebuilder/Preeda.jpg',
+  'http://www.animalhavenshelter.org/images/content/pagebuilder/aloha_tongue.jpg',
+  'http://www.animalhavenshelter.org/images/content/pagebuilder/chester_sophie.jpg'
+]
+
+4.times do |dog|
+  Dog.create!(
+    name: Faker::Name.name,
+    profile_image_url: profile_image_urls[rand(0...4)]   
+  )
+end

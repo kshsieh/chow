@@ -14,6 +14,7 @@ gem 'turbolinks'
 
 gem 'annotate'
 gem 'friendly_id'
+gem 'slim-rails'
 
 group :production do
   gem 'puma'
