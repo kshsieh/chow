@@ -1,6 +1,13 @@
-h1 Dog
+h2 Dogs Of Chow
 
-- @dogs.each do |dog|
-  h4 = dog.name
-  = image_tag dog.profile_image_url
-  p = dog.description
+.card-container
+  - @dogs.each_slice(3) do |row|
+    .row
+      - row.each do |dog|
+        .col-md-4
+          .card.profile-card
+            .dog-avatar.centered style="background-image: url(#{ dog.profile_image_url })"
+            .basic-info
+              h4 = dog.name
+              p = dog.description
+            = link_to "View More", dog_path(dog), class: "btn btn-primary"

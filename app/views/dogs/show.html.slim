@@ -1,0 +1,12 @@
+.row
+  .col-md-4
+    .card.profile-card
+      .dog-avatar.centered style="background-image: url(#{ @dog.profile_image_url })"
+      .basic-info
+        h4 = @dog.name
+        p = @dog.description
+      = link_to "Follow", 'javascript:void(0);', class: 'btn btn-primary'
+  .col-md-8
+    .feed
+      .card
+        h4 = "#{ @dog.name }'s Activity"
