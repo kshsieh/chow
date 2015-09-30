@@ -16,6 +16,7 @@ gem 'annotate'
 gem 'friendly_id'
 gem 'slim-rails'
 gem 'awesome_print'
+gem 'stamp'
 
 group :production do
   gem 'puma'

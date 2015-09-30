@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  resources :dogs
+  resources :dogs do
+    resources :post
+  end
 end

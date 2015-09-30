@@ -27,17 +27,27 @@ $roxy: #D90429;
   border-radius: 10px;
   color: $scout;
   padding: 1em 1em;
+  margin-bottom: 1em; 
 
   &.profile-card {
     margin: 0 auto;
     text-align: center;
     padding: 3em 4em;
-    margin-bottom: 1em;
     height: 500px;
 
     .basic-info {
       margin: 2em auto 0.5em auto;
       height: 150px;
+    }
+  }
+
+  &.feed-card {
+    padding: 2em 2em;
+    .feed-text {
+      margin: 1em 0;
+    }
+    .timestamp {
+      float: right;
     }
   }
 }

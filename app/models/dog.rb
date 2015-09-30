@@ -12,6 +12,8 @@
 #
 
 class Dog < ActiveRecord::Base
+  has_many :posts
+  
   validates_presence_of :name, :uuid
 
   before_validation :ensure_uuid 

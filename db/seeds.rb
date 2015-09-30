@@ -20,3 +20,9 @@ profile_image_urls = [
     profile_image_url: profile_image_urls[rand(0...4)]   
   )
 end
+
+Dog.all.each do |dog|
+  rand(0..4).times do |time|
+    dog.posts.create(text: Faker::Lorem.paragraph(2))
+  end
+end
