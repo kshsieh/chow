@@ -11,6 +11,6 @@ class DogsController < ApplicationController
   private
 
   def load_dog
-    @dog = Dog.find(params[:id])
+    @dog = Dog.friendly.find(params[:id])
   end
 end

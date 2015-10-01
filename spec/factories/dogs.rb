@@ -9,6 +9,7 @@
 #  created_at        :datetime
 #  updated_at        :datetime
 #  description       :text
+#  slug              :string
 #
 
 FactoryGirl.define do

@@ -13,13 +13,16 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 gem 'annotate'
-gem 'friendly_id'
+gem 'friendly_id', '~> 5.1.0'
 gem 'slim-rails'
 gem 'awesome_print'
 gem 'stamp'
 
+gem 'devise'
+
 group :production do
   gem 'puma'
+  gem 'rails_12factor'
 end
 
 group :development do
