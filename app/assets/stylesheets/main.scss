@@ -4,6 +4,22 @@ $soho: #EDF2F4;
 $finn: #EF233C;
 $roxy: #D90429;
 
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+.notifications {
+  padding-top: 1em;
+  margin-bottom: 2em;
+
+  &.notice {
+    background-color: $soho; 
+  }
+
+  &.alert {
+    background-color: $roxy;
+  }
+}
 
 .dog-avatar {
   padding: 1em 0;

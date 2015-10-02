@@ -30,6 +30,7 @@ group :development do
   gem 'guard'
   gem 'guard-bundler'
   gem 'guard-livereload'
+  gem 'letter_opener'
 end
 
 group :development, :test do
