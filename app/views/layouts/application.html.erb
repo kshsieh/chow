@@ -15,7 +15,7 @@
       </div>
     </nav>
     <% if notice %>
-      <div class="container-fluid notifications notice">
+      <div class="container-fluid notifications alert-info">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -26,7 +26,7 @@
       </div>
     <% end %>
     <% if alert %>
-      <div class="container-fluid notifications alert">
+      <div class="container-fluid notifications alert-danger">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -36,7 +36,7 @@
         </div>
       </div>
     <% end %>
-    <div class="container">
+    <div class="container main">
       <%= yield %>
     </div>
   </body>

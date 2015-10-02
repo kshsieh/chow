@@ -1,8 +1,20 @@
+// primary scheme
 $scout: #2B2D42;
 $sawyer: #8D99AE;
 $soho: #EDF2F4;
 $finn: #EF233C;
 $roxy: #D90429;
+
+// secondary scheme
+$eugene: #114b5f;
+$pimm: #028090;
+$marley: #e4fde1;
+$sansa: #456990;
+$nora: #f45b69;
+
+.main {
+  padding-top: 2em;
+}
 
 .navbar {
   margin-bottom: 0 !important;
@@ -11,14 +23,6 @@ $roxy: #D90429;
 .notifications {
   padding-top: 1em;
   margin-bottom: 2em;
-
-  &.notice {
-    background-color: $soho; 
-  }
-
-  &.alert {
-    background-color: $roxy;
-  }
 }
 
 .dog-avatar {
