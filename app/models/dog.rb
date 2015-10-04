@@ -16,11 +16,12 @@ class Dog < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, use: :slugged
 
-  has_many :posts
-  
   validates_presence_of :name, :uuid, :slug
 
   before_validation :ensure_uuid 
+
+  has_many :posts
+  has_many :followers, class_name: 'Follow' 
 
   private
 

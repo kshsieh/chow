@@ -26,4 +26,5 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :email
 
   has_many :dogs
+  has_many :following, class_name: 'Follow'
 end
