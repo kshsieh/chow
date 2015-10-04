@@ -37,6 +37,15 @@ $nora: #f45b69;
   margin: 0 auto;
 }
 
+form {
+  .field {
+    margin-top: 1em;
+  }
+  .btn {
+    margin: 1em;
+  }
+}
+
 .card {
   border: 3px solid $sawyer;
   background-color: $soho;
@@ -44,6 +53,12 @@ $nora: #f45b69;
   color: $scout;
   padding: 1em 1em;
   margin-bottom: 1em; 
+
+  &.session-card {
+    margin-top: 2em;
+    text-align: center;    
+    padding-bottom: 2em;
+  }
 
   &.profile-card {
     text-align: center;
