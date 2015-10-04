@@ -22,5 +22,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  validates_presence_of :name, :email, :encrypted_password
+  validates_uniqueness_of :email
+
   has_many :dogs
 end
